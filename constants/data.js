@@ -33,7 +33,7 @@ const userData = {
     currentProjectUrl: "",
   },
   socialLinks: {
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/danyalimran/",
     github: "",
   },
 }
