@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Navbar from './Navbar'
-import { Footer } from './Footer'
+import Footer  from './Footer'
 
 export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter()
@@ -10,7 +10,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
   const meta = {
     title: "Danyal Imran - Software Developer",
     description: "Developing since 2022. Get in touch with me to learn more!",
-    image: "",
+    image: "/itsame-danyal",
     type: "website",
     ...customMeta,
   }
@@ -39,8 +39,9 @@ export default function ContainerBlock({ children, ...customMeta }) {
         )}
       </Head>
       <main className="dark:bg-gray-800 w-full">
+        <Navbar />
         <div>{children}</div>
-
+        <Footer />
       </main>
     </div>
   )

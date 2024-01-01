@@ -4,11 +4,11 @@ import getLatestRepos from '@/lib/getLatestRepos'
 import userData from '@/constants/data'
 
 
-function LatestCode({ repositories }) {
-  const [repos, setRepos] = useState(repositories)
+export default function LatestCode({ repositories }) {
+  const [repos, setRepos] = useState(repositories);
 
   return (
-    <section className="bg-[#F1F1F1] -mt-40 dark:bg-gray-900 pb-40">
+    <section className="bg-[#F1F1F1] -mt-40 dark:bg-gray-900 text-gray-500 pb-40">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center md:pt-40 mx-10">
           <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-0 md:text-white dark:text-gray-600 text-center lg:text-left">
@@ -16,7 +16,6 @@ function LatestCode({ repositories }) {
           </h1>
 
           <a
-            target=''
             href={`https://github.com/${userData.githubUsername}`}
             className="mb-20 md:mb-0 px-8 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700"
           >
@@ -48,7 +47,7 @@ function LatestCode({ repositories }) {
           ))}
       </div>
     </section>
-  )
+  );
 }
 
 const GithubRepoCard = ({ latestRepo }) => {
@@ -71,5 +70,4 @@ const GithubRepoCard = ({ latestRepo }) => {
       </a>
     </div>
   );
-}
-export default LatestCode
+};
