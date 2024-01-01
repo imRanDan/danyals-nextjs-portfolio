@@ -2,7 +2,7 @@ const userData = {
   githubUsername: "imRanDan",
   name: "Danyal Imran",
   title: "Software Developer",
-  profileUrl: "/danyal-2023.jpeg",
+  profileUrl: "/itsame-danyal.jpeg",
   email: "imtherandan@gmail.com",
   projects: [
     {
