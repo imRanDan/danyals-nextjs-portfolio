@@ -5,11 +5,15 @@ function Hero() {
   return (
     <div className="flex flex-row justify-center items-start overflow-hidden">
       {/* Text container */}
-
       <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
-
             <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
               Developer.
+            </h1>
+            <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+              Creator.
+            </h1>
+            <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+              Designer.
             </h1>
      </div>
      {/* Image container */}
@@ -31,7 +35,7 @@ function Hero() {
                   d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z"
                 />
               </svg>
-              <p className="font-mono">That's me</p>
+              <p className="font-mono">That's me, Danyal!</p>
             </div>
           </div>
         </div>
