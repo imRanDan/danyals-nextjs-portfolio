@@ -1,4 +1,5 @@
 import React from 'react'
+import userData from '@/constants/data';
 
 function About() {
     return (
@@ -14,12 +15,12 @@ function About() {
               className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
               style={{ lineHeight: "3rem" }}
             >
-              {}. Currently working on{" "}
+              {/* {userData.about.title}. Currently working on{" "} */}
               <a
                 className="bg-red-500 rounded-md px-2 py-1 text-white"
-                href={userData.about.currentProjectUrl}
+                // href={userData.about.currentProjectUrl}
               >
-                {userData.about.currentProject} ✈️
+                {/* {userData.about.currentProject} ✈️ */}
               </a>
             </p>
           </div>
@@ -207,7 +208,8 @@ function About() {
           </div>
         </div>
       </section>
-    )
+    );
+
 }
 
 export default About
