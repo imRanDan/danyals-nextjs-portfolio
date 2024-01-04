@@ -19,6 +19,7 @@ export default function Projects() {
               imgUrl={proj.imgUrl}
               number={`${idx + 1}`}
               description={proj.description}
+              stack={proj.stack}
             />
           ))}
         </div>
@@ -27,9 +28,9 @@ export default function Projects() {
   );
 }
 
-const ProjectCard = ({ title, link, imgUrl, number, description }) => {
+const ProjectCard = ({ title, link, imgUrl, number, description, stack }) => {
   return (
-    <a href={link} className="w-full block shadow-2xl">
+    <a href={link} className="w-full h-full block shadow-2xl">
       <div className="relative overflow-hidden">
         <div className="h-72 object-cover">
           <img
@@ -44,9 +45,12 @@ const ProjectCard = ({ title, link, imgUrl, number, description }) => {
         <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
           {number.length === 1 ? "0" + number : number}
         </h1>
-        <div className="relative bg-white text-center py-2">
-          <p className="text-black">
+        <div className="relative bg-white text-center py-2 dark:bg-gray-700">
+          <p className="text-black px-2 py-2 font-mono dark:text-white">
               {description}
+          </p>
+          <p className="text-black px-2 py-2 font-mono dark:text-white">
+              {stack}
           </p>
         </div>
       </div>

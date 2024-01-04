@@ -1,25 +1,25 @@
-import React from 'react'
+import React from 'react';
 import userData from '@/constants/data';
 
 function Hero() {
   return (
-    <div className="flex flex-row justify-center items-start overflow-hidden">
+    <div className="flex flex-col md:flex-row justify-center items-start overflow-hidden">
       {/* Text container */}
-      <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
-            <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
-              Developer.
-            </h1>
-            <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
-              Creator.
-            </h1>
-            <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
-              Designer.
-            </h1>
-     </div>
-     {/* Image container */}
-     <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
-        <div className="w-3/4 ">
-          <img src={userData.profileUrl} alt="avatar" className=" shadow" />
+      <div className="w-full lg:w-1/2 mx-auto text-center lg:text-left lg:p-20">
+        <h1 className="text-4xl lg:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+          Developer.
+        </h1>
+        <h1 className="text-4xl lg:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+          Creator.
+        </h1>
+        <h1 className="text-4xl lg:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+          Designer.
+        </h1>
+      </div>
+      {/* Image container */}
+      <div className="w-full lg:w-1/2 mt-20 lg:mt-0">
+        <div className="w-3/4 mx-auto lg:mx-0">
+          <img src={userData.profileUrl} alt="avatar" className="shadow" />
           <div className="flex flex-row justify-between mt-4">
             <div className="flex flex-row space-x-4">
               <svg
@@ -41,7 +41,7 @@ function Hero() {
         </div>
       </div>
     </div>
-   );
+  );
 }
 
-export default Hero
+export default Hero;
