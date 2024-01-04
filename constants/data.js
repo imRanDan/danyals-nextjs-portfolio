@@ -6,35 +6,37 @@ const userData = {
   email: "imtherandan@gmail.com",
   projects: [
     {
-      title: "",
-      link: "",
-      imgUrl: "",
+      title: "TetrisJS",
+      link: "https://tetris-js-game.netlify.app/",
+      imgUrl: "/tetris-project.png",
+      description: "blah blah",
     },
     {
-      title: "",
-      link: "",
-      imgUrl: "",
+      title: "Ayesha's Hair Salon",
+      link: "https://ayeshas-salon-responsive.netlify.app/",
+      imgUrl: "/project-image-1.png",
+      description:"eee",
     },
     {
-      title: "",
-      link: "",
-      imgUrl: "",
+      title: "Password Generator",
+      link: "https://the-cool-password-generator.netlify.app/",
+      imgUrl: "/project-image-2.png",
+      description:"fff",
     },
   ],
   about: {
-    title:
-    "",
+    title:"",
     description: [
       ``,
       ``,
       ``,
     ],
-    currentProject: "",
-    currentProjectUrl: "",
+    currentProject: "myTaskList",
+    currentProjectUrl: "https://github.com/imRanDan/mytasklist-2.0",
   },
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/danyalimran/",
-    github: "",
+    github: "https://github.com/imRanDan",
   },
 }
 

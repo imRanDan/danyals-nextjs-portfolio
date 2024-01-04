@@ -15,12 +15,13 @@ function About() {
               className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
               style={{ lineHeight: "3rem" }}
             >
-              {/* {userData.about.title}. Currently working on{" "} */}
+              {userData.about.title}Currently working on{" "}
               <a
-                className="bg-red-500 rounded-md px-2 py-1 text-white"
-                // href={userData.about.currentProjectUrl}
+                target="_blank"
+                className="bg-[#a80041] rounded-md px-2 py-1 text-white"
+                href={userData.about.currentProjectUrl}
               >
-                {/* {userData.about.currentProject} ✈️ */}
+                {userData.about.currentProject} ✈️
               </a>
             </p>
           </div>
@@ -34,14 +35,14 @@ function About() {
                   Contact
                 </h1>
                 <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                  For any sort help / enquiry, shoot a{" "}
+                  For any sort of help / enquiry, shoot me an{" "}
                   <a
                     href={`mailto:${userData.email}`}
                     className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                   >
-                    mail
+                    e-mail
                   </a>{" "}
-                  and I'll get back. I swear.
+                  and I'll get back to you.
                 </p>
               </div>
               <div className="mt-8">
@@ -50,58 +51,22 @@ function About() {
                 </h1>
                 <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                   I'm looking for a job currently, If you see me as a good fit,
-                  check my{" "}
+                  message me on {" "}
                   <a
-                    href={userData.resumeUrl}
+                    href={userData.socialLinks.linkedin}
                     target="__blank"
                     className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                   >
-                    CV
+                    LinkedIn
                   </a>{" "}
-                  and I'd love to work for you.
+                  and I'd love to work with you.
                 </p>
               </div>
               {/* Social Links */}
               <h1 className="text-xl font-semibold text-gray-700 mt-8 dark:text-gray-200">
-                Social Links
+                My Links
               </h1>
               <div className="mt-4 ml-4">
-                <div className="flex flex-row justify-start items-center ">
-                  <a
-                    href={userData.socialLinks.peerlist}
-                    className="flex flex-row items-center space-x-4 group"
-                  >
-                    <div className="my-4">&rarr;</div>
-                    <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                      <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
-                      Peerlist
-                    </div>
-                  </a>
-                </div>
-                <div className="flex flex-row justify-start items-center ">
-                  <a
-                    href={userData.socialLinks.facebook}
-                    className="flex flex-row items-center space-x-4 group"
-                  >
-                    <div className="my-4">&rarr;</div>
-                    <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                      <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
-                      Facebook
-                    </div>
-                  </a>
-                </div>
-                <div className="flex flex-row justify-start items-center">
-                  <a
-                    href={userData.socialLinks.twitter}
-                    className="flex flex-row items-center space-x-4 group"
-                  >
-                    <div className="my-4">&rarr;</div>
-                    <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                      <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
-                      Twitter
-                    </div>
-                  </a>
-                </div>
                 <div className="flex flex-row justify-start items-center">
                   <a
                     href={userData.socialLinks.github}
@@ -126,18 +91,6 @@ function About() {
                     </div>
                   </a>
                 </div>
-                <div className="flex flex-row justify-start items-center">
-                  <a
-                    href={userData.socialLinks.instagram}
-                    className="flex flex-row items-center space-x-4 group"
-                  >
-                    <div className="my-4">&rarr;</div>
-                    <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                      <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-28 group-hover:translate-x-0 transition duration-300"></div>
-                      Instagram
-                    </div>
-                  </a>
-                </div>
               </div>
             </div>
             {/* Text area */}
@@ -151,16 +104,12 @@ function About() {
                 </p>
               ))}
   
-              <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
+              <h1 className="bg-[#a80041] text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
                 Tech Stack
               </h1>
               <div className="flex flex-row flex-wrap mt-8">
                 <img
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
-                  className="h-20 w-20 mx-4 my-4"
-                />
-                <img
-                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"
                   className="h-20 w-20 mx-4 my-4"
                 />
                 <img
@@ -176,11 +125,7 @@ function About() {
                   className="h-20 w-20 mx-4 my-4"
                 />
                 <img
-                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"
-                  className="h-20 w-20 mx-4 my-4"
-                />
-                <img
-                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"
+                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
                   className="h-20 w-20 mx-4 my-4"
                 />
                 <img
@@ -188,17 +133,14 @@ function About() {
                   className="h-20 w-20 mx-4 my-4"
                 />
                 <img
-                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
+                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tailwind/tailwind.png"
                   className="h-20 w-20 mx-4 my-4"
                 />
                 <img
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
                   className="h-20 w-20 mx-4 my-4"
                 />
-                <img
-                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"
-                  className="h-20 w-20 mx-4 my-4"
-                />
+    
                 <img
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
                   className="h-20 w-20 mx-4 my-4"
