@@ -37,9 +37,9 @@ const userData = {
   about: {
     title:"",
     description: [
-      `I am a self taught`,
-      ``,
-      ``,
+      `As a self-taught software developer, I bring a robust skill set in the MERN Stack, TypeScript, and Tailwind CSS to the table, coupled with a flair for digital arts. My background in communications amplifies my tech abilities, fueling my drive to solve challenges and innovate.`,
+      `When I'm not coding, you'll find me enjoying a balanced lifestyle—whether hitting the gym, mixing music, diving into a good book, experimenting in the kitchen, or exploring the outdoors with my dog. These activities not only recharge my creativity but also fuel my passion for technology.`,
+      `I'm actively seeking roles in frontend, backend, or full-stack development where I can make a meaningful impact. Additionally, I'm eager to connect with fellow tech enthusiasts to foster mutual growth and camaraderie. Whether you're interested in discussing potential collaborations or simply want to chat tech over a cup of coffee, I'm just a message away.`,
     ],
     currentProject: "myTaskList",
     currentProjectUrl: "https://github.com/imRanDan/mytasklist-2.0",
