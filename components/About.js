@@ -97,8 +97,8 @@ function About() {
             <div className="col-span-1 md:col-span-2">
               {userData.about.description?.map((desc, idx) => (
                 <p
-                  key={idx}
-                  className="text-xl text-gray-700 mb-4 dark:text-gray-300 "
+                key={idx}
+                className="text-xl text-gray-700 mb-4 dark:text-gray-300 "
                 >
                   {desc}
                 </p>

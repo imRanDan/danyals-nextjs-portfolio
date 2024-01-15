@@ -6,7 +6,7 @@ import userData from '@/constants/data'
 
 function Navbar() {
   const router = useRouter()
-  console.log(router.asPath)
+
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
