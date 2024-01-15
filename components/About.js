@@ -98,7 +98,7 @@ function About() {
               {userData.about.description?.map((desc, idx) => (
                 <p
                 key={idx}
-                className="text-xl text-gray-700 mb-4 dark:text-gray-300 "
+                className="text-xl leading-relaxed text-gray-700 mb-4 dark:text-gray-300 "
                 >
                   {desc}
                 </p>
@@ -124,6 +124,16 @@ function About() {
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
                   className="h-20 w-20 mx-4 my-4"
                 />
+
+                <img
+                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
+                  className="h-20 w-20 mx-4 my-4"
+                />
+
+                <img
+                  src="/express-js-seeklogo.svg"
+                  className="h-20 w-20 mx-4 my-4 dark:bg-white"
+                />
                 <img
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
                   className="h-20 w-20 mx-4 my-4"
@@ -131,6 +141,10 @@ function About() {
                 <img
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
                   className="h-20 w-20 mx-4 my-4"
+                />
+                <img
+                  src="/node-js-seeklogo.svg"
+                  className="h-20 w-20 mx-4 my-4 dark:bg-white"
                 />
                 <img
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tailwind/tailwind.png"
@@ -141,9 +155,11 @@ function About() {
                   className="h-20 w-20 mx-4 my-4"
                 />
     
+            
+
                 <img
-                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
-                  className="h-20 w-20 mx-4 my-4"
+                  src="/next-js-seeklogo.svg"
+                  className="h-20 w-20 mx-4 my-4 px-1 bg-[#f1f1f1] dark:bg-white"
                 />
               </div>
             </div>
