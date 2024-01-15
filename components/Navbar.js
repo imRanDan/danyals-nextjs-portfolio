@@ -19,10 +19,10 @@ function Navbar() {
       <div className="flex md:flex-row justify-between items-center">
         <div className="flex flex-col">
           <Link href="/">
-            <h1 className="font-semibold text-xl dark:text-gray-100">
+            <h1 className="font-semibold text-xl dark:text-gray-100 hover:text-[#a80041]">
               {userData.name}
             </h1>
-            <p className="text-base font-light text-gray-500 dark:text-gray-300">
+            <p className="text-base font-light text-gray-500 dark:text-gray-300 hover:text-[#a80041]">
               {userData.title}
             </p>
           </Link>
@@ -31,7 +31,7 @@ function Navbar() {
         <div className="space-x-8 hidden md:block">
           <Link
             href="/about"
-            className={`text-base  ${
+            className={`text-base hover:text-[#a80041]  ${
               router.asPath === "/about"
                 ? "text-gray-800 font-bold dark:text-gray-400"
                 : "text-gray-600 dark:text-gray-300 font-normal "
@@ -56,7 +56,7 @@ function Navbar() {
           </Link>
           <Link
             href="/projects"
-            className={`text-base  ${
+            className={`text-base hover:text-[#a80041]  ${
               router.asPath === "/projects"
                 ? "text-gray-800 font-bold dark:text-gray-400"
                 : "text-gray-600 dark:text-gray-300 font-normal "
@@ -82,7 +82,7 @@ function Navbar() {
           
           <Link
             href="/contact"
-            className={`text-base  ${
+            className={`text-base hover:text-[#a80041]  ${
               router.asPath === "/contact"
                 ? "text-gray-800 font-bold dark:text-gray-400"
                 : "text-gray-600 dark:text-gray-300 font-normal "
@@ -111,7 +111,7 @@ function Navbar() {
           <a
             target="blank"
             href={userData.socialLinks.linkedin}
-            className="text-base font-normal text-gray-600 dark:text-gray-300"
+            className="text-base font-normal text-gray-600 dark:text-gray-300 hover:text-[#a80041]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

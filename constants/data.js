@@ -26,6 +26,13 @@ const userData = {
       description:"A mobile-first responsive website for generating passwords for new or currently existing accounts.",
       stack:"Built with HTML5, CSS3, and JavaScript",
     },
+    {
+      title: "Car Showcase",
+      link: "https://car-showcase-93id.vercel.app/",
+      imgUrl: "/Car-Showcase-App.png",
+      description:"A car dealership web app that generates information from a RapidAPI database and display cards with more info on car models with fuel and year model make ",
+      stack:"Built with TypeScript, Next.js, TailwindCSS, React, RapidAPI and HeadlessUI",
+    },
   ],
   about: {
     title:"",
