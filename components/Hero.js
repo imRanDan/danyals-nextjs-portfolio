@@ -37,6 +37,9 @@ function Hero() {
               </svg>
               <p className="font-mono">That's me, Danyal!</p>
             </div>
+            <div className='flex flex-row'>
+        <p>Contact me today!</p>
+      </div>
           </div>
         </div>
       </div>
