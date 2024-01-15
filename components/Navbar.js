@@ -112,6 +112,7 @@ function Navbar() {
             target="blank"
             href={userData.socialLinks.linkedin}
             className="text-base font-normal text-gray-600 dark:text-gray-300 hover:text-[#a80041]"
+            aria-label='A link to my linkedin'
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
