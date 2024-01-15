@@ -37,7 +37,7 @@ const userData = {
   about: {
     title:"",
     description: [
-      ``,
+      `I am a self taught`,
       ``,
       ``,
     ],
