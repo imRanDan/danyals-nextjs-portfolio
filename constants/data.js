@@ -6,11 +6,18 @@ const userData = {
   email: "imtherandan@gmail.com",
   projects: [
     {
-      title: "TetrisJS",
-      link: "https://tetris-js-game.netlify.app/",
-      imgUrl: "/tetris-project.png",
-      description: "A JavaScript based game that I wanted to create for fun. Score is tracked and the game can be paused, reset, and comes with instructions. ",
-      stack:"Built with HTML5, CSS3, JavaScript, Blood, Sweat, and Tears.",
+      title: "The Little Details",
+      link: "https://thelittledetails.netlify.app/",
+      imgUrl: "/the-little-details.png",
+      description: "A front-end design created for a home-staging client based out of Oakville, ON. They wanted a wireframe / mockup that showcases their work, who they are, what they do, and a contact form.",
+      stack: "HTML, CSS, JS, and SCSS"
+    },
+    {
+      title: "Car Showcase",
+      link: "https://car-showcase-93id.vercel.app/",
+      imgUrl: "/Car-Showcase-App.png",
+      description:"A car dealership web app that generates information from a RapidAPI database and display cards with more info on car models with fuel and year model make ",
+      stack:"Built with TypeScript, Next.js, TailwindCSS, React, RapidAPI and HeadlessUI",
     },
     {
       title: "Ayesha's Hair Salon",
@@ -27,11 +34,11 @@ const userData = {
       stack:"Built with HTML5, CSS3, and JavaScript",
     },
     {
-      title: "Car Showcase",
-      link: "https://car-showcase-93id.vercel.app/",
-      imgUrl: "/Car-Showcase-App.png",
-      description:"A car dealership web app that generates information from a RapidAPI database and display cards with more info on car models with fuel and year model make ",
-      stack:"Built with TypeScript, Next.js, TailwindCSS, React, RapidAPI and HeadlessUI",
+      title: "TetrisJS",
+      link: "https://tetris-js-game.netlify.app/",
+      imgUrl: "/tetris-project.png",
+      description: "A JavaScript based game that I wanted to create for fun. Score is tracked and the game can be paused, reset, and comes with instructions. ",
+      stack:"Built with HTML5, CSS3, JavaScript, Blood, Sweat, and Tears.",
     },
   ],
   about: {
