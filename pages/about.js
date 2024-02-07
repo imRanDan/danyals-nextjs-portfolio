@@ -11,3 +11,5 @@ function contact() {
 }
 
 export default contact
+
+// Not using this
