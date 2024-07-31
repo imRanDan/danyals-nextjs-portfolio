@@ -13,7 +13,7 @@ const userData = {
       stack: "HTML, CSS, JS, and SCSS"
     },
     {
-      title: "Car Showcase",
+      title: "VroomVault",
       link: "https://car-showcase-93id.vercel.app/",
       imgUrl: "/Car-Showcase-App.png",
       description:"A car dealership web app that generates information from a RapidAPI database and display cards with more info on car models with fuel and year model make ",
@@ -44,11 +44,11 @@ const userData = {
   about: {
     title:"Software Dev - ",
     description: [
-      `I'm a self-taught software developer skilled in the MERN Stack, TypeScript, and Tailwind CSS, with a background in communications and digital arts. Outside of coding, I enjoy a balanced lifestyle with gym workouts, music mixing, reading, cooking, and outdoor adventures with my dog, all of which fuel my creative and technological passions.`,
-      `I'm looking for frontend, backend, or full-stack development roles to make a significant contribution. I'm also keen to connect with fellow tech enthusiasts for shared growth and connections. Feel free to reach out for collaborations or tech chats over coffee`,
+      `I'm a self-starter and community-taught software developer skilled in the MERN Stack, TypeScript, and Tailwind CSS, with a hunger to learn more. I have a BA from Wilfrid Laurier University, originally focused in communications and digital arts, but found that I could not put down coding during the pandemic, and here I am. Outside of coding, I enjoy YouTube (looking at what's new in tech / latest gadgetry), making playlists with Tidal and Spotify, spending time with my dog, working out in the gym, walks, and cafes.`,
+      `I'm looking for frontend, backend, or full-stack development roles. I'm also keen to connect with fellow tech enthusiasts for shared growth and connections. Feel free to reach out for collaborations or tech chats over coffee`,
     ],
-    currentProject: "myTaskList",
-    currentProjectUrl: "https://github.com/imRanDan/mytasklist-2.0",
+    currentProject: "ghola",
+    currentProjectUrl: "https://github.com/imRanDan/ghola",
   },
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/danyalimran/",

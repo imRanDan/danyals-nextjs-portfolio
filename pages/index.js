@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import LatestCode from "@/components/LatestCode";
 import getLatestRepos from "@/lib/getLatestRepos";
 import userData from "@/constants/data";
+import Projects from "@/components/Projects";
 
 
 
@@ -19,7 +20,7 @@ export default function Home({ repositories }) {
     >
       <Hero />
       <About />
-      <LatestCode repositories={repositories} />
+      <Projects />
     </ContainerBlock>
   )
 }

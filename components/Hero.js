@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div className="flex flex-col md:flex-row justify-center items-start overflow-hidden">
       {/* Text container */}
-      <div className="w-full lg:w-1/2 mx-auto text-center lg:text-left lg:p-20">
+      <div className="w-full lg:w-1/2 mx-auto text-center lg:text-right lg:p-20">
         <h1 className="text-4xl lg:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
           Developer.
         </h1>
