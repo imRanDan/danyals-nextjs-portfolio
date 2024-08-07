@@ -38,7 +38,7 @@ function Hero() {
               <p className="font-mono">That's me, Danyal!</p>
             </div>
             <div className='flex flex-row'>
-        <p>Contact me today!</p>
+        <p><a class="bg-[#a80041] rounded-md py-2 px-2 mx-2" href={`mailto:${userData.email}`}>Contact me </a>today!</p>
       </div>
           </div>
         </div>
