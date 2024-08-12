@@ -19,10 +19,10 @@ function Navbar() {
       <div className="flex md:flex-row justify-between items-center">
         <div className="flex flex-col">
           <Link href="/">
-            <h1 className="font-semibold text-xl dark:text-gray-100 hover:text-[#a80041]">
+            <h1 className="font-semibold text-xl dark:text-gray-100 hover:text-[#a4cfe4]">
               {userData.name}
             </h1>
-            <p className="text-base font-light text-gray-500 dark:text-gray-300 hover:text-[#a80041]">
+            <p className="text-base font-light text-gray-500 dark:text-gray-300 hover:text-[#a4cfe4]">
               {userData.title}
             </p>
           </Link>
@@ -31,7 +31,7 @@ function Navbar() {
         <div className="space-x-8 hidden md:block">
           <a
             href="#projects"
-            className={`text-base hover:text-[#a80041]  ${
+            className={`text-base hover:text-[#a4cfe4]  ${
               router.asPath === "/projects"
                 ? "text-gray-800 font-bold dark:text-gray-400"
                 : "text-gray-600 dark:text-gray-300 font-normal "
@@ -41,7 +41,7 @@ function Navbar() {
           </a>
           <a
             href="#about"
-            className={`text-base hover:text-[#a80041]  ${
+            className={`text-base hover:text-[#a4cfe4]  ${
               router.asPath === "/about"
                 ? "text-gray-800 font-bold dark:text-gray-400"
                 : "text-gray-600 dark:text-gray-300 font-normal "
@@ -57,7 +57,7 @@ function Navbar() {
           <a
               target="_blank"
               href={userData.socialLinks.github}
-              className="text-base font-normal text-gray-600 dark:text-gray-300  hover:text-[#a80041] p-2"
+              className="text-base font-normal text-gray-600 dark:text-gray-300  hover:text-[#a4cfe4] p-2"
               aria-label='A footer link to my github'
             >
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">
@@ -67,7 +67,7 @@ function Navbar() {
           <a
             target="blank"
             href={userData.socialLinks.linkedin}
-            className="text-base font-normal text-gray-600 dark:text-gray-300 hover:text-[#a80041]"
+            className="text-base font-normal text-gray-600 dark:text-gray-300 hover:text-[#a4cfe4]"
             aria-label='A link to my linkedin'
           >
             <svg

@@ -18,7 +18,7 @@ function Footer() {
             <a
               target="_blank"
               href={userData.socialLinks.github}
-              className="text-base font-normal text-gray-600 dark:text-gray-300  hover:text-[#a80041] p-2"
+              className="text-base font-normal text-gray-600 dark:text-gray-300  hover:text-[#a4cfe4] p-2"
               aria-label='A footer link to my github'
             >
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">
@@ -28,7 +28,7 @@ function Footer() {
             <a
               target="_blank"
               href={userData.socialLinks.linkedin}
-              className="text-base font-normal text-gray-600 dark:text-gray-300 hover:text-[#a80041] p-2"
+              className="text-base font-normal text-gray-600 dark:text-gray-300 hover:text-[#a4cfe4] p-2"
               aria-label='A footer link to my linkedin'
             >
               <svg

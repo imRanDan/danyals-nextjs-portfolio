@@ -18,7 +18,7 @@ function About() {
               {userData.about.title}Currently working on{" "}
               <a
                 target="_blank"
-                className="bg-[#a80041] rounded-md px-2 py-1 text-white"
+                className="bg-[#a4cfe4] rounded-md px-2 py-1 text-white"
                 href={userData.about.currentProjectUrl}
               >
                 {userData.about.currentProject} ✈️
@@ -104,7 +104,7 @@ function About() {
                 </p>
               ))}
   
-              <h1 className="bg-[#a80041] text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
+              <h1 className="bg-[#a4cfe4] text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
                 Tech Stack
               </h1>
               <div className="flex flex-row flex-wrap mt-8">
