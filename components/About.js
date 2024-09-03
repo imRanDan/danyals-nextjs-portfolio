@@ -47,11 +47,10 @@ function About() {
               </div>
               <div className="mt-8">
                 <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
-                  Job Opportunities
+                  Looking for your next Developer?
                 </h1>
                 <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                  I'm looking for work currently, If you see me as a good fit,
-                  message me on {" "}
+                  If you are an individual or business who is looking to get a website built, or improve your SEO and/or digital footprint, message me on  {" "}
                   <a
                     href={userData.socialLinks.linkedin}
                     target="__blank"
