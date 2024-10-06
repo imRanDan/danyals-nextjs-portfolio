@@ -18,7 +18,7 @@ function Hero() {
       </div>
       {/* Image container */}
       <div className="w-full lg:w-1/2 mt-20 lg:mt-0">
-        <div className="w-3/4 mx-auto lg:mx-0">
+        <div className="w-4/6 mx-auto lg:mx-0">
           <img src={userData.profileUrl} alt="avatar" className="shadow" />
           <div className="flex flex-row justify-between mt-4">
             <div className="flex flex-row space-x-4">
