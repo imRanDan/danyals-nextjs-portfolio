@@ -63,14 +63,13 @@ const userData = {
     },
   ],
   about: {
-    title:"Software Dev - ",
+    title:"Software Developer - ",
     description: [
-      `I'm a self-taught and community-taught software developer specializing in full-stack JavaScript (MERN), Next.js, TypeScript, and more. Outside of coding, I love working out, tracking my lifts and macros, making playlists on Tidal and Spotify, spending time with my dog, going for walks, and exploring cafes.`,
-      `From writing Lua scripts on Roblox as a kid to diving into computer classes in high school, coding has been a recurring theme throughout my life. Even when I took breaks during university and other times, I always returned—it feels like my calling. I earned my BA from Wilfrid Laurier University in Communications and Digital Arts, which helped me build strong communication and soft skills. During the pandemic, I committed fully to learning to code and became a software developer, gaining hands-on experience both independently and with an agency.`,
+      `I'm both self and community-taught software developer specializing in full-stack web development. Outside of coding, I love working out, tracking my lifts and macros, gaming, making playlists on Apple Music and Tidal, spending time with my dog, going for walks, and exploring cafes.`,
       `I'm always eager to connect with others, learn, and grow together. Whether you're looking for a new friend, co-worker, or collaborator, feel free to reach out!`,
     ],
-    currentProject: "ghola",
-    currentProjectUrl: "https://github.com/imRanDan/ghola",
+    currentProject: "cafequest",
+    currentProjectUrl: "https://github.com/imRanDan/cafequest",
   },
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/danyalimran/",
