@@ -51,7 +51,7 @@ const userData = {
       imgUrl: "/social-media-app.jpg",
       description:
         "A mobile-first responsive social media app that is a clone of Instagram. User can register with a google account or enter email/password. Users can also post, comment, and like posts.",
-      stack: "HTML5, CSS, SCSS, JavaScript.",
+      stack: "React, Firebase, Chakra UI, Zustand",
     },
   ],
   about: {
