@@ -66,6 +66,9 @@ function About() {
           </div>
           {/* Text area */}
           <div className="col-span-1 md:col-span-2">
+            <h2 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
+              Bio
+            </h2>
             {userData.about.description?.map((desc, idx) => (
               <p
                 key={idx}

@@ -11,7 +11,6 @@ const userData = {
       imgUrl: "/the-little-details.png",
       description:
         "A front-end design created for a home-staging client based out of Oakville, ON. They wanted a wireframe / mockup that showcases their work, who they are, what they do, and a contact form.",
-      stack: "HTML, CSS, JS, and SCSS.",
     },
     {
       title: "Ayesha's Hair Salon",
@@ -19,7 +18,6 @@ const userData = {
       imgUrl: "/project-image-1.png",
       description:
         "A mobile-first responsive website for a hair salon with information on barbers, services, lookbooks, contact information and more. ",
-      stack: "Built with HTML5, CSS3, and JavaScript.",
     },
     {
       title: "Password Generator",
@@ -27,7 +25,6 @@ const userData = {
       imgUrl: "/project-image-2.png",
       description:
         "A mobile-first responsive website for generating passwords for accounts that you want to create or to update existing accounts.",
-      stack: "Built with HTML5, CSS3, and JavaScript.",
     },
     {
       title: "Color Explorer",
@@ -35,7 +32,6 @@ const userData = {
       imgUrl: "/color-explorer-project.png",
       description:
         "A collaborative project from Chingu, where a team of eight and I developed a color palette app. The app utilizes Grok AI to assist users in generating a color palette based on their input of a desired color scheme and a sample color.",
-      stack: "Built with HTML5, CSS3, JavaScript, Grok AI.",
     },
     {
       title: "Imus Canada",
@@ -43,7 +39,6 @@ const userData = {
       imgUrl: "/imus-canada-client.png",
       description:
         "A client wanted a website for their business, I suggested squarespace as a platform that has great SEO and allows an interactive web building experience that the client can access.",
-      stack: "Built with Squarespace.",
     },
     {
       title: "Instagram Clone / Social Media app",
@@ -51,7 +46,6 @@ const userData = {
       imgUrl: "/social-media-app.jpg",
       description:
         "A mobile-first responsive social media app that is a clone of Instagram. User can register with a google account or enter email/password. Users can also post, comment, and like posts.",
-      stack: "React, Firebase, Chakra UI, Zustand",
     },
   ],
   about: {

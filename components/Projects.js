@@ -31,14 +31,13 @@ export default function Projects() {
 
 const ProjectCard = ({ title, link, imgUrl, number, description, stack }) => {
   return (
-    <a href={link} target="_blank" className="w-full h-full block shadow-2xl">
-      <div className="relative overflow-hidden">
-        <div className="h-72 object-fit">
+    <a href={link} target="_blank" className="shadow-2xl">
+      <div className="relative overflow-hidden p-4">
+        <div className="h-20">
           <img
-
             src={imgUrl}
             alt="portfolio"
-            className="transform hover:scale-125 transition duration-2000 ease-out object-cover object-[center_top] h-fit w-full"
+            className="transform hover:scale-105 transition duration-2000 ease-out"
           />
         </div>
         <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-[#a4cfe4] rounded-md px-2">
@@ -47,12 +46,12 @@ const ProjectCard = ({ title, link, imgUrl, number, description, stack }) => {
         <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
           {number.length === 1 ? "0" + number : number}
         </h1>
-        <div className="relative bg-white text-center pNy-2 dark:bg-gray-700">
+        <div className="relative bg-white text-center mt-48 h-32 dark:bg-gray-700">
           <p className="text-black px-2 py-2 font-mono dark:text-white">
-              {description}
+            {description}
           </p>
           <p className="text-black px-2 py-2 font-mono dark:text-white">
-              {stack}
+            {stack}
           </p>
         </div>
       </div>
