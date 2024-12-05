@@ -1,5 +1,5 @@
-import React from 'react';
-import userData from '@/constants/data';
+import React from "react";
+import userData from "@/constants/data";
 
 function Hero() {
   return (
@@ -37,9 +37,14 @@ function Hero() {
               </svg>
               <p className="font-mono">That's me, Danyal!</p>
             </div>
-            <div className='flex flex-row'>
-        <p><a class="bg-[#a4cfe4] rounded-md py-2 px-2 mx-2" href={`mailto:${userData.email}`}>Contact me </a>today!</p>
-      </div>
+            <div className="flex flex-row">
+              <a
+                className="bg-[#a4cfe4] rounded-md  mx-2 p-2 whitespace-nowrap"
+                href={`mailto:${userData.email}`}
+              >
+                Contact me{" "}
+              </a>
+            </div>
           </div>
         </div>
       </div>
