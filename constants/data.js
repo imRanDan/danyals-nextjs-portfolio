@@ -53,6 +53,14 @@ const userData = {
         "A mobile-first responsive social media app that is a clone of Instagram. User can register with a google account or enter email/password. Users can also post, comment, and like posts.",
       stack: "React, TailwindCSS, Next.js"
     },
+    {
+      title: "DIAGONAL - Modern Music Venue",
+      link: "https://diagonalclub.netlify.app/",
+      githubLink: "https://github.com/imRanDan/diagonol-venue",
+      imgUrl: "/diagonal-club.png",
+      description: "A sophisticated web application for a modern music venue featuring dynamic content, interactive event calendar, and responsive design. Built with vanilla JavaScript and modern CSS techniques.",
+      stack: "HTML5, CSS3, JavaScript, Responsive Design"
+    },
   ],
   about: {
     title: "Software Developer - ",
