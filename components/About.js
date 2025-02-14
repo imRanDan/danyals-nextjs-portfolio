@@ -4,30 +4,30 @@ import { motion } from "framer-motion";
 
 const skillsData = {
   "Programming Languages": [
-    { name: "JavaScript (ES6+)", icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" },
-    { name: "TypeScript", icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png" },
+    { name: "JavaScript (ES6+)", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", noInvert: true },
+    { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", noInvert: true },
     { name: "Java", icon: "https://raw.githubusercontent.com/github/explore/5b3600551e122a3277c2c5368af2ad5725ffa9a1/topics/java/java.png" }
   ],
   "Frontend Development": [
     { name: "React.js", icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" },
     { name: "Next.js", icon: "/next-js-seeklogo.svg" },
-    { name: "TailwindCSS", icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tailwind/tailwind.png" },
-    { name: "HTML5", icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" },
-    { name: "CSS3", icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" }
+    { name: "TailwindCSS", icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg", noInvert: true },
+    { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", noInvert: true },
+    { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", noInvert: true }
   ],
   "Backend Development": [
     { name: "Node.js", icon: "/node-js-seeklogo.svg" },
     { name: "Express", icon: "/express-js-seeklogo.svg" },
-    { name: "MongoDB", icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png" },
-    { name: "Firebase", icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png" },
-    { name: "PostgreSQL", icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png" }
+    { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", noInvert: true },
+    { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg", noInvert: true },
+    { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", noInvert: true }
   ],
   "Infrastructure & Deployment": [
-    { name: "Git", icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" },
+    { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", noInvert: true },
     { name: "GitHub Actions", icon: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/githubactions.svg" },
     { name: "Google Cloud", icon: "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" },
     { name: "Netlify", icon: "https://www.netlify.com/icon.svg" },
-    { name: "Vercel", icon: "https://assets.vercel.com/image/upload/v1607554385/repositories/vercel/logo.png" },
+    { name: "Vercel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg", noInvert: true },
     { name: "Docker", icon: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png" }
   ],
   "Project Management": [
@@ -143,7 +143,9 @@ function About() {
                           <img
                             src={skill.icon}
                             alt={`${skill.name} icon`}
-                            className="h-12 w-12 object-contain"
+                            className={`h-12 w-12 object-contain ${
+                              skill.noInvert ? '' : 'dark:invert dark:brightness-0 dark:grayscale dark:opacity-70 dark:hover:opacity-100'
+                            } transition-opacity`}
                           />
                         </div>
                       ) : (
