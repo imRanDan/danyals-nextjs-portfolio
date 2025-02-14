@@ -1,17 +1,70 @@
 import React from "react";
+import { motion } from "framer-motion";
 import userData from "@/constants/data";
+
+const ProjectCard = ({ title, link, imgUrl, number, description, stack }) => {
+  return (
+    <motion.a
+      href={link}
+      target="_blank"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: number * 0.1 }}
+      whileHover={{ y: -5 }}
+      className="block rounded-xl overflow-hidden bg-white dark:bg-gray-800 shadow-lg"
+    >
+      <div className="relative">
+        <div className="h-64 w-full overflow-hidden">
+          <img
+            src={imgUrl}
+            alt={title}
+            className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+        <div className="absolute top-0 left-0 right-0 p-4 bg-gradient-to-b from-black/70 to-transparent">
+          <h1 className="text-2xl font-bold text-white">{title}</h1>
+          <span className="text-sm text-gray-200">Project {number}</span>
+        </div>
+      </div>
+      
+      <div className="p-6">
+        <p className="text-gray-600 dark:text-gray-300 mb-4">
+          {description}
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {stack?.split(',').map((tech, i) => (
+            <span 
+              key={i}
+              className="px-3 py-1 text-sm bg-[#a4cfe4] bg-opacity-20 text-[#a4cfe4] rounded-full"
+            >
+              {tech.trim()}
+            </span>
+          ))}
+        </div>
+      </div>
+    </motion.a>
+  );
+};
 
 export default function Projects() {
   return (
     <section id="projects" className="bg-white dark:bg-gray-800">
-      <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
-        <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-          My Projects
-        </h1>
-      </div>
-      {/* Grid starts here */}
-      <div className="bg-[#F1F1F1] dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
+      <motion.div 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="max-w-6xl mx-auto px-4 py-20"
+      >
+        <motion.h1 
+          initial={{ x: -100 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-5xl md:text-7xl font-bold mb-16 text-center md:text-left"
+        >
+          Projects
+        </motion.h1>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {userData.projects.map((proj, idx) => (
             <ProjectCard
               key={proj.id || idx}
@@ -24,37 +77,7 @@ export default function Projects() {
             />
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
-
-const ProjectCard = ({ title, link, imgUrl, number, description, stack }) => {
-  return (
-    <a href={link} target="_blank" className="shadow-2xl">
-      <div className="relative overflow-hidden p-4">
-        <div className="h-20">
-          <img
-            src={imgUrl}
-            alt="portfolio"
-            className="transform hover:scale-105 transition duration-2000 ease-out"
-          />
-        </div>
-        <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-[#a4cfe4] rounded-md px-2">
-          {title}
-        </h1>
-        <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
-          {number.length === 1 ? "0" + number : number}
-        </h1>
-        <div className="relative bg-white text-center mt-48 h-32 dark:bg-gray-700">
-          <p className="text-black px-2 py-2 font-mono dark:text-white">
-            {description}
-          </p>
-          <p className="text-black px-2 py-2 font-mono dark:text-white">
-            {stack}
-          </p>
-        </div>
-      </div>
-    </a>
-  );
-};

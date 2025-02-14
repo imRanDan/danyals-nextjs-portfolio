@@ -81,58 +81,104 @@ function About() {
             <h1 className="bg-[#a4cfe4] text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
               Tech Stack
             </h1>
-            <div className="flex flex-row flex-wrap mt-8">
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+              <div className="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg">
+                <h3 className="text-xl font-semibold mb-4">Frontend</h3>
+                <div className="flex flex-wrap gap-4">
+                  <div className="flex flex-col items-center">
+                    <img
+                      src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
+                      className="h-12 w-12"
+                      alt="JavaScript"
+                    />
+                    <span className="text-sm mt-2">JavaScript</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <img
+                      src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
+                      className="h-12 w-12"
+                      alt="React"
+                    />
+                    <span className="text-sm mt-2">React</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <img
+                      src="/next-js-seeklogo.svg"
+                      className="h-12 w-12 px-1 bg-[#f1f1f1] dark:bg-white"
+                      alt="Next.js"
+                    />
+                    <span className="text-sm mt-2">Next.js</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <img
+                      src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tailwind/tailwind.png"
+                      className="h-12 w-12"
+                      alt="TailwindCSS"
+                    />
+                    <span className="text-sm mt-2">TailwindCSS</span>
+                  </div>
+                </div>
+              </div>
 
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
+              <div className="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg">
+                <h3 className="text-xl font-semibold mb-4">Backend</h3>
+                <div className="flex flex-wrap gap-4">
+                  <div className="flex flex-col items-center">
+                    <img
+                      src="/node-js-seeklogo.svg"
+                      className="h-12 w-12 dark:bg-white"
+                      alt="Node.js"
+                    />
+                    <span className="text-sm mt-2">Node.js</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <img
+                      src="/express-js-seeklogo.svg"
+                      className="h-12 w-12 dark:bg-white"
+                      alt="Express"
+                    />
+                    <span className="text-sm mt-2">Express</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <img
+                      src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
+                      className="h-12 w-12"
+                      alt="MongoDB"
+                    />
+                    <span className="text-sm mt-2">MongoDB</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <img
+                      src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png"
+                      className="h-12 w-12"
+                      alt="PostgreSQL"
+                    />
+                    <span className="text-sm mt-2">PostgreSQL</span>
+                  </div>
+                </div>
+              </div>
 
-              <img
-                src="/express-js-seeklogo.svg"
-                className="h-20 w-20 mx-4 my-4 dark:bg-white"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="/node-js-seeklogo.svg"
-                className="h-20 w-20 mx-4 my-4 dark:bg-white"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tailwind/tailwind.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-
-              <img
-                src="/next-js-seeklogo.svg"
-                className="h-20 w-20 mx-4 my-4 px-1 bg-[#f1f1f1] dark:bg-white"
-              />
+              <div className="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg">
+                <h3 className="text-xl font-semibold mb-4">Tools & Others</h3>
+                <div className="flex flex-wrap gap-4">
+                  <div className="flex flex-col items-center">
+                    <img
+                      src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
+                      className="h-12 w-12"
+                      alt="Git"
+                    />
+                    <span className="text-sm mt-2">Git</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <img
+                      src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
+                      className="h-12 w-12"
+                      alt="Firebase"
+                    />
+                    <span className="text-sm mt-2">Firebase</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

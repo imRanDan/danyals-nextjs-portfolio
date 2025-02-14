@@ -1,27 +1,55 @@
 import React from "react";
+import { motion } from "framer-motion";
 import userData from "@/constants/data";
 
 function Hero() {
+  const titles = ["Developer.", "Creator.", "Designer."];
+  
   return (
     <div className="flex flex-col md:flex-row justify-center items-start overflow-hidden">
       {/* Text container */}
-      <div className="w-full lg:w-1/2 mx-auto text-center lg:text-right lg:p-20">
-        <h1 className="text-4xl lg:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
-          Developer.
-        </h1>
-        <h1 className="text-4xl lg:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
-          Creator.
-        </h1>
-        <h1 className="text-4xl lg:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
-          Designer.
-        </h1>
-      </div>
+      <motion.div 
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        className="w-full lg:w-1/2 mx-auto text-center lg:text-right lg:p-20"
+      >
+        {titles.map((title, index) => (
+          <motion.h1
+            key={title}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+            className="text-4xl lg:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2"
+          >
+            {title}
+          </motion.h1>
+        ))}
+      </motion.div>
+      
       {/* Image container */}
-      <div className="w-full lg:w-1/2 mt-20 lg:mt-0">
+      <motion.div 
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        className="w-full lg:w-1/2 mt-20 lg:mt-0"
+      >
         <div className="w-4/6 mx-auto lg:mx-0">
-          <img src={userData.profileUrl} alt="avatar" className="shadow" />
+          <motion.img 
+            initial={{ scale: 0.8 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.5 }}
+            src={userData.profileUrl} 
+            alt="avatar" 
+            className="shadow rounded-xl"
+          />
           <div className="flex flex-row justify-between mt-4">
-            <div className="flex flex-row space-x-4">
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5 }}
+              className="flex flex-row space-x-4"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -36,18 +64,25 @@ function Hero() {
                 />
               </svg>
               <p className="font-mono">That's me, Danyal!</p>
-            </div>
-            <div className="flex flex-row">
-              <a
-                className="bg-[#a4cfe4] rounded-md  mx-2 p-2 whitespace-nowrap"
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.7 }}
+              className="flex flex-row"
+            >
+              <motion.a
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-[#a4cfe4] rounded-md mx-2 p-2 whitespace-nowrap text-white"
                 href={`mailto:${userData.email}`}
               >
-                Contact me{" "}
-              </a>
-            </div>
+                Contact me
+              </motion.a>
+            </motion.div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

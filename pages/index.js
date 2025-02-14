@@ -9,6 +9,7 @@ import LatestCode from "@/components/LatestCode";
 import getLatestRepos from "@/lib/getLatestRepos";
 import userData from "@/constants/data";
 import Projects from "@/components/Projects";
+import Timeline from "@/components/Timeline";
 
 export default function Home({ repositories }) {
   return (
@@ -18,6 +19,7 @@ export default function Home({ repositories }) {
     >
       <Hero />
       <About />
+      <Timeline />
       <Projects />
     </ContainerBlock>
   );
