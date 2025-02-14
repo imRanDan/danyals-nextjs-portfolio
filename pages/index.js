@@ -10,6 +10,8 @@ import getLatestRepos from "@/lib/getLatestRepos";
 import userData from "@/constants/data";
 import Projects from "@/components/Projects";
 import Timeline from "@/components/Timeline";
+import GitHubActivity from "@/components/GitHubActivity";
+import SocialBar from "@/components/SocialBar";
 
 export default function Home({ repositories }) {
   return (
@@ -17,9 +19,11 @@ export default function Home({ repositories }) {
       title="Danyal Imran - Software Developer"
       description="Building websites since 2022. For more info please feel free to contact me!"
     >
+      <SocialBar />
       <Hero />
       <About />
       <Timeline />
+      <GitHubActivity />
       <Projects />
     </ContainerBlock>
   );

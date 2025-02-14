@@ -5,6 +5,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import ScrollProgress from './ScrollProgress'
 import FloatingContact from './FloatingContact'
+import BackToTop from './BackToTop'
 
 export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter()
@@ -46,6 +47,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
         <div>{children}</div>
         <Footer />
         <FloatingContact />
+        <BackToTop />
       </main>
     </div>
   )

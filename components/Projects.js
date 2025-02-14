@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import userData from "@/constants/data";
 
@@ -12,17 +13,23 @@ const ProjectCard = ({ title, link, imgUrl, number, description, stack }) => {
       transition={{ duration: 0.5, delay: number * 0.1 }}
       whileHover={{ y: -5 }}
       className="block rounded-xl overflow-hidden bg-white dark:bg-gray-800 shadow-lg"
+      tabIndex={0}
+      role="article"
+      aria-label={`Project: ${title}`}
     >
       <div className="relative">
-        <div className="h-64 w-full overflow-hidden">
-          <img
+        <div className="h-64 w-full relative">
+          <Image
             src={imgUrl}
-            alt={title}
-            className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
+            alt={`Screenshot of ${title}`}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover transform transition-transform duration-500 hover:scale-110"
+            priority={number === "1"}
           />
         </div>
         <div className="absolute top-0 left-0 right-0 p-4 bg-gradient-to-b from-black/70 to-transparent">
-          <h1 className="text-2xl font-bold text-white">{title}</h1>
+          <h2 className="text-2xl font-bold text-white">{title}</h2>
           <span className="text-sm text-gray-200">Project {number}</span>
         </div>
       </div>
