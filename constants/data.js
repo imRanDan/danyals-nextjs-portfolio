@@ -71,7 +71,7 @@ const userData = {
     },
   ],
   about: {
-    title: "Software Developer - ",
+    title: "Web Developer - ",
     description: [
       "I’m Danyal, a Web Developer who builds clean, responsive websites for small businesses, entrepreneurs, and creators. Whether you're starting from scratch or want to upgrade your online presence, I design sites that are fast, mobile-friendly, and built to convert visitors into customers.",
     ],

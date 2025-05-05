@@ -16,8 +16,8 @@ import ServicesSection from "@/components/Services";
 export default function Home({ repositories }) {
   return (
     <ContainerBlock
-      title="Danyal Imran - Software Developer"
-      description="Building websites since 2022. For more info please feel free to contact me!"
+      title="Danyal Imran – Web Developer for Small Businesses & Brands"
+      description="I build clean, fast, mobile-friendly websites for small businesses, creators, and local brands. Let's bring your online presence to life."
     >
       <SocialBar />
       <Hero />
