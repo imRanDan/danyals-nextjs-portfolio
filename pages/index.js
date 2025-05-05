@@ -11,6 +11,7 @@ import Projects from "@/components/Projects";
 import Timeline from "@/components/Timeline";
 import GitHubActivity from "@/components/GitHubActivity";
 import SocialBar from "@/components/SocialBar";
+import ServicesSection from "@/components/Services";
 
 export default function Home({ repositories }) {
   return (
@@ -20,10 +21,11 @@ export default function Home({ repositories }) {
     >
       <SocialBar />
       <Hero />
+      <Projects />
+      <ServicesSection />
       <About />
       <Timeline />
       <GitHubActivity />
-      <Projects />
     </ContainerBlock>
   );
 }

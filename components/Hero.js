@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import userData from "@/constants/data";
 
 function Hero() {
-  const titles = ["Developer.", "Creator.", "Designer."];
-  
+  const titles = ["Modern Websites for Small Businesses & Personal Brands"];
+
   return (
     <div className="flex flex-col md:flex-row justify-center items-start overflow-hidden">
       {/* Text container */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
@@ -26,25 +26,25 @@ function Hero() {
           </motion.h1>
         ))}
       </motion.div>
-      
+
       {/* Image container */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
         className="w-full lg:w-1/2 mt-20 lg:mt-0"
       >
         <div className="w-4/6 mx-auto lg:mx-0">
-          <motion.img 
+          <motion.img
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.5 }}
-            src={userData.profileUrl} 
-            alt="avatar" 
+            src={userData.profileUrl}
+            alt="avatar"
             className="shadow rounded-xl"
           />
           <div className="flex flex-row justify-between mt-4">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
@@ -65,7 +65,7 @@ function Hero() {
               </svg>
               <p className="font-mono">That's me, Danyal!</p>
             </motion.div>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
