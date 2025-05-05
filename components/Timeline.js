@@ -1,26 +1,30 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const experiences = [
   {
     year: "2022-Present",
-    title: "Full Stack Developer (Freelance & Contract)",
-    description: "Built and deployed scalable web applications using React, Next.js, and PostgreSQL. Implemented real-time features using Firebase and Firestore. Set up CI/CD pipelines and managed deployments through Vercel and Netlify. Specialized in creating responsive, SEO-optimized websites for small businesses.",
+    title: "Freelance Web Developer",
+    description:
+      "Designed and launched responsive, SEO-optimized websites for small businesses. Built scalable web apps with React, Next.js, and PostgreSQL. Integrated real-time features with Firebase and Firestore. Deployed using Vercel, Netlify, and CI/CD pipelines.",
   },
   {
     year: "2024",
-    title: "Software Developer at Chingu",
-    description: "Developed an AI-powered color palette tool using React and Groq SDK APIs. Led frontend development implementing interactive UI/UX components from Figma designs. Collaborated with a team of eight developers using Git for version control.",
+    title: "Frontend Developer – Chingu (Collaborative Project)",
+    description:
+      "Led frontend work on an AI-powered color palette tool using React and Groq APIs. Built interactive UI from Figma designs. Collaborated with an 8-person global dev team using Git workflows.",
   },
   {
     year: "2024",
-    title: "Mentor at PathPeer",
-    description: "Guided students in modern web development practices, focusing on React, Node.js, and full-stack applications. Provided mentorship in portfolio development, technical interview preparation, and current industry practices.",
+    title: "Mentor – PathPeer",
+    description:
+      "Mentored aspiring developers on React, Node.js, and full-stack web dev. Reviewed portfolios, provided technical interview prep, and guided industry best practices",
   },
   {
     year: "2022-2023",
-    title: "Software Developer at 100Devs",
-    description: "Developed full-stack applications using TypeScript, JavaScript, and the MERN stack. Created RESTful APIs with Node.js and Express, integrated with MongoDB and PostgreSQL databases. Deployed applications using cloud platforms including Vercel, Render, and Google Cloud.",
+    title: "Software Developer – 100Devs",
+    description:
+      "Built full-stack apps with TypeScript, JavaScript, and the MERN stack. Developed REST APIs and integrated databases (MongoDB, PostgreSQL). Deployed production-ready apps with platforms like Vercel and Google Cloud.",
   },
 ];
 
@@ -28,7 +32,7 @@ export default function Timeline() {
   return (
     <section className="py-20 bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto px-4">
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="text-3xl font-bold mb-12 text-center"
@@ -47,7 +51,9 @@ export default function Timeline() {
               <div className="w-24 text-[#a4cfe4] font-bold">{exp.year}</div>
               <div className="flex-1">
                 <h3 className="font-bold mb-2">{exp.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400">{exp.description}</p>
+                <p className="text-gray-600 dark:text-gray-400">
+                  {exp.description}
+                </p>
               </div>
             </motion.div>
           ))}
@@ -55,4 +61,4 @@ export default function Timeline() {
       </div>
     </section>
   );
-} 
+}
