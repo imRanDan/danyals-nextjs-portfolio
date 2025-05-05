@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import userData from "@/constants/data";
 
 function Hero() {
-  const titles = ["Modern Websites for Small Businesses & Personal Brands"];
+  const titles = ["Clean, Fast, and Mobile-Ready Websites"];
 
   return (
     <div className="flex flex-col md:flex-row justify-center items-start overflow-hidden">
