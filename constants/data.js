@@ -17,7 +17,6 @@ const userData = {
     },
     {
       title: "Instagram Clone / Social Media app",
-      link: "https://social-media-app-imrandan.vercel.app/auth",
       githubLink: "https://github.com/imRanDan/social-media-app",
       imgUrl: "/social-media-app.jpg",
       description:
