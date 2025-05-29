@@ -28,9 +28,9 @@ const userData = {
 
     {
     title: "Citrine – Modern Restaurant Website",
-    link: "https://citrinebytheshore.netlify.app//", // if live
-    githubLink: "https://github.com/imRanDan/citrine", // adjust if needed
-    imgUrl: "/citrine-restaurant.png", // whatever the preview image is
+    link: "https://citrinebytheshore.netlify.app//",
+    githubLink: "https://github.com/imRanDan/citrine-restaurant", 
+    imgUrl: "/citrine-restaurant.png", 
     description:
       "A refined, modern restaurant site designed to showcase upscale dining. Features smooth scroll animations, curated menu sections, reservation CTA, and a bold brand aesthetic. Built for visual impact and UX polish.",
     stack: "HTML5, CSS3, JavaScript, Responsive Design",
