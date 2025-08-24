@@ -58,11 +58,11 @@ const userData = {
     },
 
     {
-      title: "Instagram Clone",
+      title: "ConnectWit",
       githubLink: "https://github.com/imRanDan/social-media-app",
       imgUrl: "/social-media-app.jpg",
       description:
-        "Responsive social media app with Google/email auth, posting, commenting, and likes. Built with mobile-first UX.",
+        "Responsive private social media app with Google/email auth, posting, commenting, and likes. Built with mobile-first UX.",
       stack: "React, TailwindCSS, Next.js, Firebase",
     },
 
