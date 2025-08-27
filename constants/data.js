@@ -36,6 +36,17 @@ const userData = {
     stack: "HTML5, CSS3, JavaScript, Responsive Design",
   },
 
+     {
+    title: "Cinema Flicks – Movie Search",
+    link: "https://cinema-flicks.netlify.app/",
+    githubLink: "https://github.com/imRanDan/movie-app", 
+    imgUrl: "/cinema-flicks.png", 
+    description:
+      "A modern movie search app that also tracks metrics of most searched movies.",
+    stack: "React, Vite, JavaScript, TailwindCSS, Appwrite, Responsive Design",
+  },
+
+
 
     {
       title: "Color Explorer - a tool for Designers and Developers",
