@@ -20,7 +20,7 @@ const userData = {
       title: "The Little Details",
       link: "https://thelittledetails.netlify.app/",
       githubLink: "https://github.com/imRanDan/the-little-details",
-      imgUrl: "/the-little-details.png",
+      imgUrl: "/tld-staging.png",
       description:
         "A modern website for a local home-staging business. Features a services section, gallery, and contact forms",
       stack: "HTML5, CSS3, JavaScript, Responsive Design",
@@ -30,7 +30,7 @@ const userData = {
     title: "Citrine – Modern Restaurant Website",
     link: "https://citrinebytheshore.netlify.app//",
     githubLink: "https://github.com/imRanDan/citrine-restaurant", 
-    imgUrl: "/citrine-restaurant.png", 
+    imgUrl: "/citrine.png", 
     description:
       "A refined, modern restaurant site designed to showcase upscale dining. Features smooth scroll animations, curated menu sections, reservation CTA, and a bold brand aesthetic. Built for visual impact and UX polish.",
     stack: "HTML5, CSS3, JavaScript, Responsive Design",
@@ -51,7 +51,7 @@ const userData = {
       title: "DIAGONAL - Modern Music Venue",
       link: "https://diagonalclub.netlify.app/",
       githubLink: "https://github.com/imRanDan/diagonol-venue",
-      imgUrl: "/diagonal-club.png",
+      imgUrl: "/diagonal.png",
       description:
         "Stylish music venue site with event filtering, merch store, and newsletter signup. Designed with industrial-inspired visuals and smooth animations.",
       stack: "HTML5, CSS3, JavaScript, Responsive Design",
@@ -71,7 +71,7 @@ const userData = {
       title: "Ayesha's Hair Salon",
       link: "https://ayeshas-salon-responsive.netlify.app/",
       githubLink: "https://github.com/imRanDan/ayeshas-hair-salon",
-      imgUrl: "/project-image-1.png",
+      imgUrl: "/ayesha.png",
       description:
         "Mobile-first responsive site for a hair salon featuring services, lookbooks, and booking info.",
       stack: "HTML5, CSS3, Responsive Design",
