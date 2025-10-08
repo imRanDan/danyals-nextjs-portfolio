@@ -92,8 +92,7 @@ const userData = {
   about: {
     title: "Web Developer - ",
     description: [
-      "I’m Danyal, a Web Developer who builds clean, responsive websites for small businesses, entrepreneurs, and creators. Whether you're starting from scratch or want to upgrade your online presence, I design sites that are fast, mobile-friendly, and built to convert visitors into customers.",
-    ],
+      "I'm Danyal, a Frontend Developer with 2+ years building performant React applications. I specialize in creating fast, accessible user interfaces with measurable results—98 Lighthouse scores and 40% performance improvements through optimization and clean code. Currently seeking full-time frontend roles in Toronto or remote Canada where I can contribute to impactful products and continue growing my technical skills."],
     currentProject: "cafequest",
     currentProjectUrl: "https://github.com/imRanDan/cafequest",
   },

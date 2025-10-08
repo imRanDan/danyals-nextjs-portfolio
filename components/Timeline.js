@@ -12,7 +12,7 @@ const experiences = [
     year: "2024",
     title: "Frontend Developer – Chingu (Collaborative Project)",
     description:
-      "Led frontend work on an AI-powered color palette tool using React and Groq APIs. Built interactive UI from Figma designs. Collaborated with an 8-person global dev team using Git workflows.",
+      "Built AI-powered color palette tool using React and Groq APIs as part of 5-person collaborative team. Created responsive UI components from Figma designs. Worked with global developers using Git workflows.",
   },
   {
     year: "2024",
