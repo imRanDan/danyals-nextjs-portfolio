@@ -11,8 +11,8 @@ export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter();
 
   const meta = {
-    title: "Danyal Imran - Web Developer",
-    description: "Developing since 2022. Get in touch with me to learn more!",
+    title: "Danyal Imran - Full-Stack Developer",
+    description: "Developing since 2022",
     image: "/itsame-danyal",
     type: "website",
     ...customMeta,

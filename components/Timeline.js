@@ -3,28 +3,28 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    year: "2022-Present",
-    title: "Freelance Web Developer",
+    year: "Oct 2025 – Present",
+    title: "Web Developer (Volunteer) – TechTank, Toronto",
     description:
-      "Designed and launched responsive, SEO-optimized websites for small businesses. Built scalable web apps with React, Next.js, and PostgreSQL. Integrated real-time features with Firebase and Firestore. Deployed using Vercel, Netlify, and CI/CD pipelines.",
+      "Collaborating on team React migration from Squarespace • Made first contribution (Luma calendar integration) and rallying team for next steps",
   },
   {
-    year: "2024",
-    title: "Frontend Developer – Chingu (Collaborative Project)",
+    year: "Feb 2022 – Present",
+    title: "Full-Stack Developer – Freelance, Remote (4 active clients)",
     description:
-      "Built AI-powered color palette tool using React and Groq APIs as part of 5-person collaborative team. Created responsive UI components from Figma designs. Worked with global developers using Git workflows.",
+      "Independently gathered requirements, built & deployed 5+ production web apps (97+ Lighthouse average) • Delivered full projects solo from discovery to deployment",
   },
   {
-    year: "2024",
-    title: "Mentor – PathPeer",
+    year: "Mar – Jul 2024",
+    title: "Frontend Developer – Chingu, Remote",
     description:
-      "Mentored aspiring developers on React, Node.js, and full-stack web dev. Reviewed portfolios, provided technical interview prep, and guided industry best practices",
+      "Built AI-powered color palette generator with 6-person remote team • Pixel-perfect React components from Figma in 16-week agile sprint",
   },
   {
-    year: "2022-2023",
-    title: "Software Developer – 100Devs",
+    year: "Mar 2022 – Mar 2023",
+    title: "Software Developer – 100Devs Bootcamp, Remote",
     description:
-      "Built full-stack apps with TypeScript, JavaScript, and the MERN stack. Developed REST APIs and integrated databases (MongoDB, PostgreSQL). Deployed production-ready apps with platforms like Vercel and Google Cloud.",
+      "700+ hour full-stack intensive → 3 production apps + weekly code reviews & agile sprints",
   },
 ];
 
@@ -39,19 +39,24 @@ export default function Timeline() {
         >
           Journey So Far
         </motion.h2>
-        <div className="space-y-8">
+
+        <div className="space-y-12">
           {experiences.map((exp, index) => (
             <motion.div
               key={exp.year}
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="flex gap-8"
+              transition={{ duration: 0.5, delay: index * 0.15 }}
+              className="flex gap-8 items-start"
             >
-              <div className="w-24 text-[#a4cfe4] font-bold">{exp.year}</div>
+              <div className="w-32 text-[#a4cfe4] font-bold shrink-0">
+                {exp.year}
+              </div>
               <div className="flex-1">
-                <h3 className="font-bold mb-2">{exp.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400">
+                <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100">
+                  {exp.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                   {exp.description}
                 </p>
               </div>

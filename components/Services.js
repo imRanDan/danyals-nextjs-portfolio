@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 
+// moving this to sitesbydan
+
 const services = [
   {
     title: "Business Websites",

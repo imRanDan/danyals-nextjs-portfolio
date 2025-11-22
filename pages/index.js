@@ -11,18 +11,16 @@ import Projects from "@/components/Projects";
 import Timeline from "@/components/Timeline";
 import GitHubActivity from "@/components/GitHubActivity";
 import SocialBar from "@/components/SocialBar";
-import ServicesSection from "@/components/Services";
 
 export default function Home({ repositories }) {
   return (
     <ContainerBlock
-      title="Danyal Imran – Web Developer for Small Businesses & Brands"
-      description="I build clean, fast, mobile-friendly websites for small businesses, creators, and local brands. Let's bring your online presence to life."
+      title="Danyal Imran – Full-Stack Developer"
+      description="I am a Full-Stack Developer that works with React, Next.js, TypeScript, Go, and AI Tooling. I am open to full-time opportunities"
     >
       <SocialBar />
       <Hero />
       <Projects />
-      <ServicesSection />
       <About />
       <Timeline />
       <GitHubActivity />

@@ -40,16 +40,6 @@ function Navbar() {
             Projects
           </a>
           <a
-            href="#services"
-            className={`text-base hover:text-[#a4cfe4]  ${
-              router.asPath === "/services"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
-            }`}
-          >
-            Services
-          </a>
-          <a
             href="#about"
             className={`text-base hover:text-[#a4cfe4] ${
               router.asPath === "/about"
