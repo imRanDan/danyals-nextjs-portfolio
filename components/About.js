@@ -52,11 +52,11 @@ const About = () => {
               transition={{ duration: 0.6 }}
             >
               <p className="text-xl leading-relaxed text-gray-700 dark:text-gray-300 mb-6">
-                Self-taught Full-Stack Engineer with 3.5+ years shipping production apps end-to-end.
+                Self-taught Full-Stack Developer with 3.5+ years shipping production apps end-to-end.
                 Known in Toronto tech for building in public on X (@TheRanDan).
               </p>
               <p className="text-xl leading-relaxed text-gray-700 dark:text-gray-300">
-                Proven ability to gather requirements, architect solutions, and deliver performant tools solo — average 97+ Lighthouse scores across projects.
+                Proven ability to gather requirements, architect solutions, and deliver performant tools solo or with a team - average 97+ Lighthouse scores across projects.
                 Strongest in React, Next.js, TypeScript, Go, PostgreSQL, and building AI agents / agentic workflows.
               </p>
             </motion.div>
