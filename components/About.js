@@ -52,7 +52,7 @@ const About = () => {
               transition={{ duration: 0.6 }}
             >
               <p className="text-xl leading-relaxed text-gray-700 dark:text-gray-300 mb-6">
-                Self-taught Full-Stack Developer with 3.5+ years shipping production apps end-to-end.
+                Self/Community-taught Full-Stack Developer with 3.5+ years shipping production apps end-to-end.
                 Known in Toronto tech for building in public on X (@TheRanDan).
               </p>
               <p className="text-xl leading-relaxed text-gray-700 dark:text-gray-300">
@@ -77,7 +77,7 @@ const About = () => {
               "Node.js", "Go", "Python", "PostgreSQL",
               "MongoDB", "Firebase", "TailwindCSS", "Docker",
               "Vercel", "Git", "REST APIs", "OAuth/JWT",
-              "AI Agents (Claude API)", "CI/CD"
+              "AI Agents (Claude API)", "CI/CD", "Agile"
             ].map((skill, idx) => (
               <motion.div
                 key={skill}
