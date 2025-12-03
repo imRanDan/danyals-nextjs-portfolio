@@ -11,6 +11,15 @@ const projects = [
     githubLink: "https://github.com/imRanDan/cafequest",
     imgUrl: "/cafequest-app.png",
   },
+    {
+    title: "Creator Growth Tool – Instagram Analytics",
+    description:
+      "Full-stack analytics platform analyzing 10,000+ Instagram posts with AI-powered growth recommendations and automated content suggestions.",
+    stack: "Go, PostgreSQL, React, Next.js, TypeScript, OAuth 2.0, JWT",
+    link: "https://creator-growth-api.vercel.app/",     
+    githubLink: "https://github.com/imRanDan/creator-growth-api",
+    imgUrl: "creator-growth.png"          
+  },
   {
     title: "Color Explorer – AI Color Palette Generator",
     description:
@@ -28,15 +37,6 @@ const projects = [
     link: null,
     githubLink: "https://github.com/imRanDan/connectwit",
     imgUrl: "/social-media-app.jpg",
-  },
-  {
-    title: "Creator Growth Tool – Instagram Analytics",
-    description:
-      "Full-stack analytics platform analyzing 10,000+ Instagram posts with AI-powered growth recommendations and automated content suggestions.",
-    stack: "Go, PostgreSQL, React, Next.js, TypeScript, OAuth 2.0, JWT",
-    link: null,     
-    githubLink: "https://github.com/imRanDan/creator-growth-api",
-    imgUrl: null          
   },
   {
     title: "CLU – AI Test Generation Agent CLI",
