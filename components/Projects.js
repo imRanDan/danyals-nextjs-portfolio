@@ -45,7 +45,7 @@ const projects = [
     stack: "Python, Claude API, Agentic Workflows",
     link: null,
     githubLink: "https://github.com/imRanDan/clu",
-    imgUrl: null
+    imgUrl: "clu-testgrid.png"
   },
  
 ];
