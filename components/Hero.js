@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useTheme } from "next-themes";
 import userData from "@/constants/data";
 
 function Hero() {
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const titles = ["Full-Stack Developer"];
+  
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  
+  // Select photo based on theme:
+  // Dark mode = serious photo (danyal-headshot-2024.jpg)
+  // Light mode = lighter photo (danimran-photo.jpg)
+  const profilePhoto = mounted && theme === "dark" 
+    ? "/danyal-headshot-2024.jpg" 
+    : "/danimran-photo.jpg";
 
   return (
     <div className="flex flex-col md:flex-row justify-center items-start overflow-hidden">
@@ -39,9 +53,9 @@ function Hero() {
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.5 }}
-            src={userData.profileUrl}
+            src={profilePhoto}
             alt="avatar"
-            className="shadow rounded-xl"
+            className="shadow rounded-xl w-full h-auto object-cover aspect-square"
           />
           <div className="flex flex-row justify-between mt-4">
             <motion.div
