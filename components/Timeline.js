@@ -4,29 +4,30 @@ import { motion } from "framer-motion";
 const experiences = [
   {
     year: "Oct 2025 – Present",
-    title: "Web Developer (Volunteer) – TechTank, Toronto",
+    title: "Frontend Developer (Volunteer) – TechTank, Toronto",
     description:
-      "Collaborating on team React migration from Squarespace • Made first contribution (Luma calendar integration) and rallying team for next steps",
+      "Contributing to a React migration from Squarespace, building and refining user-facing components. Shipped first feature (Luma calendar integration) and collaborating with the team on upcoming frontend improvements.",
   },
   {
     year: "Feb 2022 – Present",
-    title: "Full-Stack Developer – Freelance, Remote (4 active clients)",
+    title: "Frontend Developer – Freelance, Remote",
     description:
-      "Independently gathered requirements, built & deployed 5+ production web apps (97+ Lighthouse average) • Delivered full projects solo from discovery to deployment",
+      "Delivered 5+ production web applications for clients, owning frontend architecture, UI implementation, and performance optimization (97+ Lighthouse average). Led projects end-to-end from requirements through deployment.",
   },
   {
     year: "Mar – Jul 2024",
     title: "Frontend Developer – Chingu, Remote",
     description:
-      "Built AI-powered color palette generator with 6-person remote team • Pixel-perfect React components from Figma in 16-week agile sprint",
+      "Built an AI-powered color palette generator with a 6-person remote team, implementing pixel-perfect React components from Figma during a 16-week sprint.",
   },
   {
     year: "Mar 2022 – Mar 2023",
-    title: "Software Developer – 100Devs Bootcamp, Remote",
+    title: "Frontend-Focused Developer – 100Devs Bootcamp, Remote",
     description:
-      "700+ hour full-stack intensive → 3 production apps + weekly code reviews & agile sprints",
+      "Completed a 700+ hour intensive focused on building production-ready web applications, including frontend feature development, code reviews, and collaborative sprints.",
   },
 ];
+
 
 export default function Timeline() {
   return (

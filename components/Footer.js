@@ -11,18 +11,6 @@ export default function Footer() {
           {/* Left – Copyright + subtle freelance link */}
           <div className="text-center md:text-left space-y-2">
             <p>© {new Date().getFullYear()} Danyal Imran. All Rights Reserved.</p>
-            <p className="text-xs">
-              Need a website for your business? →{" "}
-              <a
-                href="https://sitesbydan.ca"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-2 hover:text-[#a4cfe4] transition-colors"
-              >
-                sitesbydan.ca
-              </a>{" "}
-              <span className="opacity-70">(selective freelance only)</span>
-            </p>
           </div>
 
           {/* Right – Social icons */}

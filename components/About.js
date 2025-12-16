@@ -20,7 +20,7 @@ const About = () => {
                 Contact
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                Open to full-time full-stack or frontend roles in Toronto or remote Canada.
+                Open to full-time frontend roles in Toronto or remote Canada.
                 <br />
                 <a
                   href="mailto:dan.imran97@gmail.com"
@@ -52,12 +52,13 @@ const About = () => {
               transition={{ duration: 0.6 }}
             >
               <p className="text-xl leading-relaxed text-gray-700 dark:text-gray-300 mb-6">
-                Self/Community-taught Full-Stack Developer with 3.5+ years shipping production apps end-to-end.
-                Known in Toronto tech for building in public on X (@TheRanDan).
+                Self-taught Front-End Developer with 3.5+ years of experience shipping production web applications end-to-end.
+                I build in public and focus on clean, user-focused interfaces that ship and get used.
+
               </p>
               <p className="text-xl leading-relaxed text-gray-700 dark:text-gray-300">
-                Proven ability to gather requirements, architect solutions, and deliver performant tools solo or with a team - average 97+ Lighthouse scores across projects.
-                Strongest in React, Next.js, TypeScript, Go, PostgreSQL, and building AI agents / agentic workflows.
+                I’ve shipped performant, user-facing tools both solo and in team settings, from scoping requirements through delivery.
+                My strongest experience is in React, Next.js, and TypeScript, with backend experience supporting end-to-end features.
               </p>
             </motion.div>
           </div>
@@ -65,32 +66,123 @@ const About = () => {
       </div>
 
       {/* Skills & Technologies – cleaned up + modern */}
+       {/* Skills & Technologies – grouped for clarity */}
       <div className="bg-[#F1F1F1] dark:bg-gray-900 px-4">
         <div className="max-w-6xl mx-auto py-20">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
             Skills & Technologies
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              "TypeScript", "JavaScript", "React", "Next.js",
-              "Node.js", "Go", "Python", "PostgreSQL",
-              "MongoDB", "Firebase", "TailwindCSS", "Docker",
-              "Vercel", "Git", "REST APIs", "OAuth/JWT",
-              "AI Agents (Claude API)", "CI/CD", "Agile"
-            ].map((skill, idx) => (
-              <motion.div
-                key={skill}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: idx * 0.05 }}
-                className="bg-white dark:bg-gray-800 rounded-lg px-6 py-4 text-center shadow-md hover:shadow-xl transition-shadow"
-              >
-                <p className="text-lg font-medium text-gray-800 dark:text-gray-200">
-                  {skill}
-                </p>
-              </motion.div>
-            ))}
+          <div className="space-y-16">
+            {/* Frontend */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-200">
+                Frontend
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                {[
+                  "TypeScript",
+                  "JavaScript",
+                  "React",
+                  "Next.js",
+                  "TailwindCSS",
+                ].map((skill, idx) => (
+                  <motion.div
+                    key={skill}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: idx * 0.05 }}
+                    className="bg-white dark:bg-gray-800 rounded-lg px-6 py-4 text-center shadow-md hover:shadow-xl transition-shadow"
+                  >
+                    <p className="text-lg font-medium text-gray-800 dark:text-gray-200">
+                      {skill}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+
+            {/* Backend (Supporting) */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-200">
+                Backend (Supporting)
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                {[
+                  "Node.js",
+                  "Go",
+                  "Python",
+                  "PostgreSQL",
+                  "MongoDB",
+                  "Firebase",
+                ].map((skill, idx) => (
+                  <motion.div
+                    key={skill}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: idx * 0.05 }}
+                    className="bg-white dark:bg-gray-800 rounded-lg px-6 py-4 text-center shadow-md hover:shadow-xl transition-shadow"
+                  >
+                    <p className="text-lg font-medium text-gray-800 dark:text-gray-200">
+                      {skill}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+
+            {/* Tools & Platforms */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-200">
+                Tools & Platforms
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                {[
+                  "Git",
+                  "Vercel",
+                  "Docker",
+                  "REST APIs",
+                  "OAuth / JWT",
+                  "CI/CD",
+                ].map((skill, idx) => (
+                  <motion.div
+                    key={skill}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: idx * 0.05 }}
+                    className="bg-white dark:bg-gray-800 rounded-lg px-6 py-4 text-center shadow-md hover:shadow-xl transition-shadow"
+                  >
+                    <p className="text-lg font-medium text-gray-800 dark:text-gray-200">
+                      {skill}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+
+            {/* Other */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-200">
+                Other
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                {[
+                  "AI Agents (Claude API)",
+                ].map((skill, idx) => (
+                  <motion.div
+                    key={skill}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: idx * 0.05 }}
+                    className="bg-white dark:bg-gray-800 rounded-lg px-6 py-4 text-center shadow-md hover:shadow-xl transition-shadow"
+                  >
+                    <p className="text-lg font-medium text-gray-800 dark:text-gray-200">
+                      {skill}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

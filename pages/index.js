@@ -15,8 +15,8 @@ import SocialBar from "@/components/SocialBar";
 export default function Home({ repositories }) {
   return (
     <ContainerBlock
-      title="Danyal Imran – Full-Stack Developer"
-      description="I am a Full-Stack Developer that works with React, Next.js, TypeScript, Go, and AI Tooling. I am open to full-time opportunities"
+      title="Danyal Imran – Front-End Developer"
+      description="I am a Front-End Developer that works with React, Next.js, TypeScript and. I am open to full-time opportunities"
     >
       <SocialBar />
       <Hero />

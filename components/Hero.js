@@ -6,7 +6,7 @@ import userData from "@/constants/data";
 function Hero() {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const titles = ["Full-Stack Developer"];
+  const titles = ["Front-End Developer"];
   
   useEffect(() => {
     setMounted(true);

@@ -2,53 +2,44 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const projects = [
-   {
+  {
     title: "CafeQuest – Real-time Cafe Discovery",
     description:
-      "Location-based discovery app with user auth, favorites, and real-time search • 97+ Lighthouse • 0.7s LCP • Built solo from scratch.",
-    stack: "React, Next.js, TypeScript, Mapbox, Firebase, TailwindCSS",
-    link: "https://cafequest.vercel.app/",                          
+      "Frontend-led location-based discovery app featuring interactive maps, real-time search, and saved favorites • 97+ Lighthouse • 0.7s LCP • Built solo from scratch.",
+    stack: "React, Next.js, TypeScript, TailwindCSS, Mapbox, Firebase",
+    link: "https://cafequest.vercel.app/",
     githubLink: "https://github.com/imRanDan/cafequest",
     imgUrl: "/cafequest-app.png",
   },
-    {
-    title: "Creator Growth Tool – Instagram Analytics",
+  {
+    title: "Creator Growth Tool – Instagram Analytics Dashboard",
     description:
-      "Full-stack analytics platform analyzing 10,000+ Instagram posts with AI-powered growth recommendations and automated content suggestions.",
-    stack: "Go, PostgreSQL, React, Next.js, TypeScript, OAuth 2.0, JWT",
-    link: "https://creator-growth-api.vercel.app/",     
+      "Interactive analytics dashboard visualizing engagement across 10,000+ Instagram posts, with AI-powered insights and recommendations.",
+    stack: "React, Next.js, TypeScript, TailwindCSS, Go, PostgreSQL, OAuth 2.0, JWT",
+    link: "https://creator-growth-api.vercel.app/",
     githubLink: "https://github.com/imRanDan/creator-growth-api",
-    imgUrl: "creator-growth.png"          
+    imgUrl: "creator-growth.png",
   },
   {
     title: "Color Explorer – AI Color Palette Generator",
     description:
-      "Collaborative tool built with 6-person remote team (Chingu) • Uses Groq API to generate custom palettes from user prompts or sample colors.",
+      "Collaborative frontend tool built with a 6-person remote team, allowing users to generate and explore color palettes from prompts or sample colors.",
     stack: "React, TailwindCSS, Groq API",
-    link: "https://v49-tier2-team-17.netlify.app/",       
-    githubLink: "https://github.com/chingu-voyages/v49-tier2-team-17", 
+    link: "https://v49-tier2-team-17.netlify.app/",
+    githubLink: "https://github.com/chingu-voyages/v49-tier2-team-17",
     imgUrl: "/color-explorer-project.png",
   },
   {
-    title: "ConnectWit – Private Social Network",
+    title: "Scout",
     description:
-      "Mobile-first social app with Google/email auth, posting, commenting, likes, and real-time updates.",
-    stack: "React, Next.js, Firebase, TailwindCSS",
-    link: null,
-    githubLink: "https://github.com/imRanDan/connectwit",
-    imgUrl: "/social-media-app.jpg",
+      "Frontend-first local discovery app that helps users find cafés, restaurants, and venues in Toronto using natural-language prompts, returning curated results in a clean, card-based UI.",
+    stack: "Next.js (App Router), TypeScript,Tailwind CSS, OpenAI API",
+    link: "https://scoutai-toronto.vercel.app/",
+    githubLink: "https://github.com/imRanDan/scout",
+    imgUrl: "/scout-app.png",
   },
-  {
-    title: "CLU – AI Test Generation Agent CLI",
-    description:
-      "Python AI agent using Claude API • Autonomous framework detection • Generates production-ready tests in 14 languages with zero-shot prompting.",
-    stack: "Python, Claude API, Agentic Workflows",
-    link: null,
-    githubLink: "https://github.com/imRanDan/clu",
-    imgUrl: "clu-testgrid.png"
-  },
- 
 ];
+
 
 const ProjectCard = ({ title, description, stack, link, githubLink, imgUrl }) => {
   return (
