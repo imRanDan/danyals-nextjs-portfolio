@@ -24,7 +24,7 @@ const experiences = [
     year: "Mar 2022 – Mar 2023",
     title: "Frontend-Focused Developer – 100Devs, Remote",
     description:
-      "Completed a 700+ hour intensive focused on building production-ready web applications, including frontend feature development, code reviews, and collaborative sprints.",
+      "Completed a 700+ hour intensive training program focused on building production-ready web applications, including frontend feature development, code reviews, and collaborative sprints.",
   },
 ];
 
