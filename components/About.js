@@ -53,7 +53,7 @@ const About = () => {
               transition={{ duration: 0.6 }}
             >
               <p className="text-xl leading-relaxed text-gray-700 dark:text-gray-300 mb-6">
-                Self-taught Front-End Developer with 3.5+ years of experience shipping production web applications end-to-end.
+                Self-taught Front-End Developer with experience shipping production web applications end-to-end.
                 I build in public and focus on clean, user-focused interfaces that ship and get used.
 
               </p>
