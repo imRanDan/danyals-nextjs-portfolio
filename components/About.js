@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Skills from "./Skills";
 
 const About = () => {
   return (
@@ -12,7 +13,7 @@ const About = () => {
       </div>
 
       <div className="bg-[#F1F1F1] dark:bg-gray-900 px-4 -mt-10">
-        <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
+        <div className="pt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
           {/* Left column – Contact only (killed the freelance pitch) */}
           <div className="inline-flex flex-col">
             <div>
@@ -65,125 +66,11 @@ const About = () => {
         </div>
       </div>
 
-      {/* Skills & Technologies – cleaned up + modern */}
-       {/* Skills & Technologies – grouped for clarity */}
+      {/* Skills & Technologies */}
       <div className="bg-[#F1F1F1] dark:bg-gray-900 px-4">
         <div className="max-w-6xl mx-auto py-20">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-            Skills & Technologies
-          </h2>
-
-          <div className="space-y-16">
-            {/* Frontend */}
-            <div>
-              <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-200">
-                Frontend
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                {[
-                  "TypeScript",
-                  "JavaScript",
-                  "React",
-                  "Next.js",
-                  "TailwindCSS",
-                ].map((skill, idx) => (
-                  <motion.div
-                    key={skill}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: idx * 0.05 }}
-                    className="bg-white dark:bg-gray-800 rounded-lg px-6 py-4 text-center shadow-md hover:shadow-xl transition-shadow"
-                  >
-                    <p className="text-lg font-medium text-gray-800 dark:text-gray-200">
-                      {skill}
-                    </p>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-
-            {/* Backend (Supporting) */}
-            <div>
-              <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-200">
-                Backend (Supporting)
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                {[
-                  "Node.js",
-                  "Go",
-                  "Python",
-                  "PostgreSQL",
-                  "MongoDB",
-                  "Firebase",
-                ].map((skill, idx) => (
-                  <motion.div
-                    key={skill}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: idx * 0.05 }}
-                    className="bg-white dark:bg-gray-800 rounded-lg px-6 py-4 text-center shadow-md hover:shadow-xl transition-shadow"
-                  >
-                    <p className="text-lg font-medium text-gray-800 dark:text-gray-200">
-                      {skill}
-                    </p>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-
-            {/* Tools & Platforms */}
-            <div>
-              <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-200">
-                Tools & Platforms
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                {[
-                  "Git",
-                  "Vercel",
-                  "Docker",
-                  "REST APIs",
-                  "OAuth / JWT",
-                  "CI/CD",
-                ].map((skill, idx) => (
-                  <motion.div
-                    key={skill}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: idx * 0.05 }}
-                    className="bg-white dark:bg-gray-800 rounded-lg px-6 py-4 text-center shadow-md hover:shadow-xl transition-shadow"
-                  >
-                    <p className="text-lg font-medium text-gray-800 dark:text-gray-200">
-                      {skill}
-                    </p>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-
-            {/* Other */}
-            <div>
-              <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-200">
-                Other
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                {[
-                  "AI Agents (Claude API)",
-                ].map((skill, idx) => (
-                  <motion.div
-                    key={skill}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: idx * 0.05 }}
-                    className="bg-white dark:bg-gray-800 rounded-lg px-6 py-4 text-center shadow-md hover:shadow-xl transition-shadow"
-                  >
-                    <p className="text-lg font-medium text-gray-800 dark:text-gray-200">
-                      {skill}
-                    </p>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </div>
+          {/* Use the shared Skills component */}
+          <Skills />
         </div>
       </div>
     </section>

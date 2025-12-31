@@ -1,104 +1,52 @@
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import { useTheme } from "next-themes";
+import { motion, AnimatePresence } from "framer-motion";
 import userData from "@/constants/data";
 
 function Hero() {
-  const { theme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-  const titles = ["Front-End Developer"];
-  
+  const titles = ["Front-End Developer", "Web Developer", "UI/UX Enthusiast"];
+  const [index, setIndex] = useState(0);
+
   useEffect(() => {
-    setMounted(true);
-  }, []);
-  
-  // Select photo based on theme:
-  // Dark mode = serious photo (danyal-headshot-2024.jpg)
-  // Light mode = lighter photo (danimran-photo.jpg)
-  const profilePhoto = mounted && theme === "dark" 
-    ? "/danyal-headshot-2024.jpg" 
-    : "/danimran-photo.jpg";
+    const id = setInterval(() => setIndex((i) => (i + 1) % titles.length), 2500);
+    return () => clearInterval(id);
+  }, [titles.length]);
+
+  // Profile photo removed per request — no photo will be displayed.
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-start overflow-hidden">
+    <div className="flex flex-col justify-center items-center min-h-[50vh] overflow-hidden">
       {/* Text container */}
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
-        className="w-full lg:w-1/2 mx-auto text-center lg:text-right lg:p-20"
+        className="w-full lg:w-2/3 mx-auto text-center p-8 lg:p-20 flex flex-col items-center"
       >
-        {titles.map((title, index) => (
+        <AnimatePresence mode="wait">
           <motion.h1
-            key={title}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="text-4xl lg:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2"
+            key={index}
+            initial={{ opacity: 0, y: 10, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -10, scale: 0.98 }}
+            transition={{ duration: 0.45 }}
+            className="text-4xl lg:text-8xl font-bold my-2 bg-gradient-to-r from-[#4fd1c5] via-[#63b3ed] to-[#a4cfe4] text-transparent bg-clip-text"
           >
-            {title}
+            {titles[index]}
           </motion.h1>
-        ))}
-      </motion.div>
+        </AnimatePresence>
 
-      {/* Image container */}
-      <motion.div
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
-        className="w-full lg:w-1/2 mt-20 lg:mt-0"
-      >
-        <div className="w-4/6 mx-auto lg:mx-0">
-          <motion.img
-            initial={{ scale: 0.8 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.5 }}
-            src={profilePhoto}
-            alt="avatar"
-            className="shadow rounded-xl w-full h-auto object-cover aspect-square"
-          />
-          <div className="flex flex-row justify-between mt-4">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className="flex flex-row space-x-4"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="bi bi-arrow-90deg-up"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z"
-                />
-              </svg>
-              <p className="font-mono">That's me, Danyal!</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.7 }}
-              className="flex flex-row"
-            >
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-[#a4cfe4] rounded-md mx-2 p-2 whitespace-nowrap text-white"
-                href={`mailto:${userData.email}`}
-              >
-                Contact me
-              </motion.a>
-            </motion.div>
-          </div>
-        </div>
+        <motion.p
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="text-lg text-gray-600 dark:text-gray-300 mt-3"
+        >
+          I build clean, accessible interfaces that scale.
+        </motion.p>
       </motion.div>
     </div>
   );
+
 }
 
 export default Hero;
