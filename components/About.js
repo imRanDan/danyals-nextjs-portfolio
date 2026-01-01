@@ -21,7 +21,7 @@ const About = () => {
                 Contact
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                Open to full-time frontend roles in Toronto or remote Canada.
+                Open to full-time frontend roles, internships, and contract work in Toronto or remote Canada.
                 <br />
                 <a
                   href="mailto:dan.imran97@gmail.com"
@@ -53,13 +53,13 @@ const About = () => {
               transition={{ duration: 0.6 }}
             >
               <p className="text-xl leading-relaxed text-gray-700 dark:text-gray-300 mb-6">
-                Self-taught Front-End Developer with experience shipping production web applications end-to-end.
-                I build in public and focus on clean, user-focused interfaces that ship and get used.
-
+                Self-taught Frontend Developer focused on building clean, responsive web interfaces with React, Next.js, and TypeScript. I learn by building—working on real projects, contributing to teams, and shipping features that people actually use.
               </p>
-              <p className="text-xl leading-relaxed text-gray-700 dark:text-gray-300">
-                I’ve shipped performant, user-facing tools both solo and in team settings, from scoping requirements through delivery.
-                My strongest experience is in React, Next.js, and TypeScript, with backend experience supporting end-to-end features.
+              <p className="text-xl leading-relaxed text-gray-700 dark:text-gray-300 mb-6">
+                I'm comfortable working independently or collaboratively, from initial concept through deployment. Currently contributing to TechTank's platform and building personal projects to keep learning and improving.
+              </p>
+              <p className="text-xl leading-relaxed text-gray-700 dark:text-gray-300 mb-6">
+                Looking for opportunities where I can contribute, grow my skills, and work alongside experienced developers.
               </p>
             </motion.div>
           </div>

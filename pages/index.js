@@ -8,7 +8,6 @@ import Footer from "@/components/Footer";
 import LatestCode from "@/components/LatestCode";
 import userData from "@/constants/data";
 import Projects from "@/components/Projects";
-import Timeline from "@/components/Timeline";
 import GitHubActivity from "@/components/GitHubActivity";
 import SocialBar from "@/components/SocialBar";
 
@@ -22,7 +21,6 @@ export default function Home({ repositories }) {
       <Hero />
       <Projects />
       <About />
-      <Timeline />
       <GitHubActivity />
     </ContainerBlock>
   );
