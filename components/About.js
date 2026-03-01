@@ -21,7 +21,7 @@ const About = () => {
                 Contact
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                Open to full-time frontend roles, internships, and contract work in Toronto or remote Canada.
+                Open to collaborations, side projects, and contributing to open-source or learning projects.
                 <br />
                 <a
                   href="mailto:dan.imran97@gmail.com"
@@ -38,9 +38,6 @@ const About = () => {
               </a>
               <a href="https://github.com/imRanDan" target="_blank" rel="noreferrer" className="block text-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
                 github.com/imRanDan
-              </a>
-              <a href="https://x.com/TheRanDan" target="_blank" rel="noreferrer" className="block text-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
-                x.com/TheRanDan
               </a>
             </div>
           </div>
