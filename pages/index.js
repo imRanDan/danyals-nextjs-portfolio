@@ -15,7 +15,7 @@ export default function Home({ repositories }) {
   return (
     <ContainerBlock
       title="Danyal Imran – Front-End Developer"
-      description="I am a Front-End Developer that works with React, Next.js, TypeScript and. I am open to full-time opportunities"
+      description="I am a Front-End Developer that works with React, Next.js, TypeScript."
     >
       <SocialBar />
       <Hero />
